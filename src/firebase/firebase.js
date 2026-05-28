@@ -4,13 +4,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBrr7leD5impp9uToUePo3gQDLIsH_8Vy8",
-    authDomain: "cryptocurrency-tracker-website.firebaseapp.com",
-    projectId: "cryptocurrency-tracker-website",
-    storageBucket: "cryptocurrency-tracker-website.firebasestorage.app",
-    messagingSenderId: "730141121811",
-    appId: "1:730141121811:web:df54d0dde79202fc578ee6",
-    measurementId: "G-06XMDRMKR5"
+    apiKey: "AIzaSyBDWwHRxCRaiGDAcU6gfzL8-538URxxu0Y",
+    authDomain: "cyrptocurrencytracker.firebaseapp.com",
+    projectId: "cyrptocurrencytracker",
+    storageBucket: "cyrptocurrencytracker.firebasestorage.app",
+    messagingSenderId: "877372162274",
+    appId: "1:877372162274:web:5b481ceda638fbeaff1ebb",
+    measurementId: "G-6W1K7GSGTT"
 };
 
 // Initialize Firebase

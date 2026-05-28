@@ -20,7 +20,10 @@ const Register = () => {
             try {
                 await doCreateUserWithEmailAndPassword(email, password);
             } catch (error) {
-                setErrorMessage('Registration failed. Please try again.');
+                console.error("Registration error:", error);
+                // Firebase error messages usually look like "Firebase: Error (auth/email-already-in-use)."
+                // We'll show the actual message so we know what's wrong (e.g., if Email Auth isn't enabled)
+                setErrorMessage(error.message || 'Registration failed. Please try again.');
             } finally {
                 setIsRegistering(false);
             }

@@ -1,4 +1,4 @@
-import { db } from './firebase'; 
+import { db } from './firebase';
 import { collection, addDoc, query, where, getDocs, Timestamp } from 'firebase/firestore';
 import { auth } from './firebase'; // Import the auth to get the current user
 
@@ -8,13 +8,13 @@ export const addComment = async (coinId, text) => {
   if (!user) {
     throw new Error("User not authenticated");
   }
-  console.log('User details:', user); 
+  console.log('User details:', user);
   const email = user.email ? user.email : "Anonymous";
   const commentRef = collection(db, 'comments');
   await addDoc(commentRef, {
     coinId,
     text,
-    email, 
+    email,
     timestamp: Timestamp.now()
   });
 };
