@@ -20,7 +20,7 @@ function News() {
             query: 'cryptocurrency'
         },
         headers: {
-            'x-rapidapi-key': '3dbb383bcamshc3c064afefbc698p12489bjsn7117f94f31c3',
+            'x-rapidapi-key': import.meta.env.VITE_RAPIDAPI_KEY,
             'x-rapidapi-host': 'news-api14.p.rapidapi.com'
         }
     };
